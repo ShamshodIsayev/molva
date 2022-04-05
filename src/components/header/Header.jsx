@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 function Header() {
   useEffect(() => {
     AOS.init();
+    document.title = "Molva";
   }, []);
 
   return (

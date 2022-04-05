@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 function WorkReport() {
   useEffect(() => {
     AOS.init();
+   
   }, []);
 
   return (

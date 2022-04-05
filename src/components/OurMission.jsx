@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../styles/mission.css";
 
 function OurMission() {
@@ -17,11 +19,21 @@ function OurMission() {
     "Счастливые врачи",
   ];
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="mission">
       <h2 className="mission__title">Наша миссия</h2>
 
-      <div className="mission__container">
+      <div
+        className="mission__container"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-delay="500"
+        data-aos-easing="ease-in-sine"
+      >
         {num.map((el, i) => {
           return (
             <React.Fragment key={Math.random()}>
@@ -47,14 +59,6 @@ function OurMission() {
           );
         })}
       </div>
-
-      {/* <div className="mission__hr">
-        <hr />
-        <FontAwesomeIcon
-          className="mission__hr_arrow"
-          icon={faArrowRightLong}
-        />
-      </div> */}
     </section>
   );
 }

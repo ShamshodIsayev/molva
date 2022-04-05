@@ -43,8 +43,6 @@ function Certificate() {
         autoplay={{
           delay: 1500,
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         scrollbar={{ draggable: true }}
         controller={{ control: controlledSwiper }}
       >

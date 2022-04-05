@@ -38,10 +38,8 @@ function ResultsManufacture() {
     mql.onchange = (e) => {
       if (window.matchMedia("(max-width: 500px").matches) {
         setPerView(2);
-        console.log(1);
       }
       if (window.matchMedia("(max-width: 780px").matches) {
-        console.log(3);
         setPerView(4);
       }
       if (window.matchMedia("(max-width: 1200px)").matches) {
@@ -61,8 +59,6 @@ function ResultsManufacture() {
 
     setManufacture(manufacture);
   };
-
-  console.log(activeImg);
 
   return (
     <>

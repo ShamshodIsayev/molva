@@ -27,7 +27,6 @@ function Customers() {
     setArr(tempArr);
   }, []);
 
-  console.log(arr);
   return (
     <div className="customers">
       <div className="customers__wrapper">

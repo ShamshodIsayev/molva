@@ -1,0 +1,50 @@
+.catalog {
+  padding: 0 8% 120px;
+  font-family: "Proxima Nova";
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+}
+
+.catalog__wrapper img {
+  width: 33%;
+}
+
+.catalog__btn {
+  width: 200px;
+  height: 49px;
+  background-color: #2ab5bb;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.catalog__btn:hover {
+  background-color: #14686b;
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    padding-right: 0;
+    padding: 70px 8% 70px 8%;
+  } 
+
+  .catalog__wrapper {
+    overflow-x: scroll;
+  }
+
+  .catalog__wrapper img {
+    width: 100%;
+  }
+}

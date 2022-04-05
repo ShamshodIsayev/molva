@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.results {
+  padding: 100px 8% 100px 8%;
+  font-family: "Proxima Nova";
+  position: relative;
+}
+
+.results__category {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 44px;
+}
+
+.resuts__category_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.resuts__category_title:hover {
+  border-bottom: #0370a352 5px solid;
+}
+
+.resuts__category_title.active {
+  border-bottom: #0370a3 5px solid;
+}
+
+.results__hr {
+  margin-bottom: 8px;
+}
+
+.ma-img {
+  display: block;
+  width: 30%;
+  height: 50px;
+  object-fit: contain;
+  height: 143px;
+}
+
+.manufactures__wrapper {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+
+.manufactures .swiper {
+  width: 70%;
+}
+
+.manufactures .swiper-slide {
+  height: 100%;
+  min-width: 100px;
+}
+
+.manufactures .swiper-wrapper {
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.manufactures__wrapper img {
+  filter: saturate(0) brightness(1.2);
+  object-fit: contain;
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 50px;
+}
+
+.manufactures__wrapper img.active {
+  filter: none;
+}
+
+.manufacture_info {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manufactures__wrapper img.active:first-child {
+  filter: none;
+}
+
+.manufacture_info_box {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  text-align: left;
+}
+
+.manufacture_info_title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.manufacture_info_des {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #585b5b;
+}
+
+.customers__wrapper {
+  display: flex;
+  gap: 3%;
+  justify-content: flex-start;
+  margin-bottom: 55px;
+}
+
+.customers__wrapper .swiper {
+  width: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+  height: 125px;
+}
+
+.customers .swiper-horizontal > .swiper-scrollbar {
+  bottom: 0 !important;
+}
+
+.customers__wrapper .swiper-wrapper {
+  gap: 3%;
+  padding-bottom: 45px;
+}
+
+.customers__wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers__wrapper img {
+  filter: brightness(1) saturate(0);
+  object-fit: contain;
+  min-width: 100px;
+  cursor: pointer;
+  min-height: 50px;
+}
+
+.customers__wrapper img.active {
+  filter: none;
+}
+
+.customer {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.customer img {
+  height: 230px;
+  width: 26%;
+  object-fit: contain;
+  margin-right: auto;
+  margin-left: 0;
+  display: block;
+}
+
+.customer__ul {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  text-align: left;
+  overflow-y: scroll;
+  width: 50%;
+  overflow-x: visible;
+  overflow: auto;
+  height: 50%;
+  padding-left: 5%;
+}
+
+.customer__ul li {
+  position: relative;
+  overflow: visible;
+  color: red;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.customer__ul span {
+  position: absolute;
+  left: 0%;
+  background-color: red;
+  opacity: 0;
+  color: white;
+  z-index: 6;
+  width: 100%;
+  text-align: center;
+}
+
+.customer__ul li:hover span {
+  opacity: 1;
+}
+
+.customer__ul .red::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  background-color: red;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.customer__ul .black::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  background-color: black;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+@media (max-width: 1240px) {
+  .manufactures__wrapper img {
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .manufactures__wrapper img {
+    min-height: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .manufactures__wrapper img {
+    min-height: 30px;
+  }
+  .customers .swiper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .manufactures .swiper {
+    width: 100%;
+  }
+
+  .manufactures__wrapper img {
+    min-height: auto;
+  }
+
+  .customer img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .customer__ul {
+    display: none;
+  }
+}

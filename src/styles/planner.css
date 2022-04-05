@@ -65,9 +65,33 @@
   background-color: #176690 !important;
 }
 
-
 @media (max-width: 767px) {
+ .planner .swiper-slide {
+    width: 165px !important;
+  }
+
   .planner {
     padding: 70px 8% 70px 8%;
+  }
+
+  .september {
+    margin-bottom: 0 !important;
+  }
+
+  .plan_last {
+    display: none;
+  }
+
+  .planner_block__title {
+  }
+
+  .planner_block__title {
+    font-size: 24px;
+  }
+
+  .planner_block {
+    min-width: 158px;
+    max-width: 158px;
+    width: 10%;
   }
 }

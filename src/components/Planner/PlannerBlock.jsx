@@ -6,7 +6,7 @@ function PlannerBlock() {
     <>
       <SwiperSlide>
         <figure className="planner_block">
-          <h3 className="planner_block__title">Сентябрь 2010</h3>
+          <h3 className="planner_block__title september">Сентябрь 2010</h3>
           <hr className="planner_block__hr" />
           <h5 className="planner_block__head">Подать заявку / Звонок</h5>
           <p className="planner_block__des">
@@ -37,7 +37,7 @@ function PlannerBlock() {
         </figure>
       </SwiperSlide>
       <SwiperSlide>
-        <figure className="planner_block">
+        <figure className="planner_block plan_last">
           <h3 className="planner_block__title">Апрель 2012</h3>
           <hr className="planner_block__hr" />
           <h5 className="planner_block__head">Оформление документов</h5>
